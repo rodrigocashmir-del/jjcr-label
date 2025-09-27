@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JJCR Chocolates Label</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f5f5f5;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 20px;
+    }
+    header {
+      width: 100%;
+      max-width: 1200px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 20px;
+    }
+    header h1 {
+      font-size: 24px;
+      font-weight: bold;
+      color: #4a2c2a;
+    }
+    header a, header button {
+      padding: 10px 20px;
+      margin-left: 10px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      text-decoration: none;
+      color: #fff;
+    }
+    .download { background: #6b4226; }
+    .print { background: #333; }
+    .label {
+      background: #fff;
+      width: 100%;
+      max-width: 1200px;
+      aspect-ratio: 1.414 / 1; /* A4 landscape */
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      padding: 30px;
+      display: flex;
+      gap: 20px;
+    }
+    .left {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: center;
+    }
+    .left img {
+      width: 150px;
+      height: auto;
+      margin-bottom: 15px;
+    }
+    .left h2 {
+      font-size: 32px;
+      color: #4a2c2a;
+      margin: 0;
+    }
+    .right {
+      flex: 1;
+      background: #fafafa;
+      border-radius: 10px;
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 14px;
+    }
+    td {
+      padding: 8px;
+    }
+    tr + tr td {
+      border-top: 1px solid #ddd;
+    }
+    .bottom {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-top: 20px;
+    }
+    .sls {
+      text-align: center;
+    }
+    .sls-box {
+      width: 80px;
+      height: 50px;
+      border: 1px solid #333;
+      border-radius: 5px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 12px;
+      font-weight: bold;
+    }
+    .barcode {
+      background: #fff;
+      padding: 5px;
+      border-radius: 5px;
+    }
+    .barcode img {
+      display: block;
+      width: 150px;
+      height: auto;
+    }
+    footer {
+      margin-top: 15px;
+      font-size: 12px;
+      color: #666;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>JJCR Chocolates — Label Preview</h1>
+    <div>
+      
+    </div>
+  </header>
+
+  <section class="label">
+    <div class="left">
+      <img src="you-are-a-professional-graphic-designer-_3d23whjXQVef3zq2GfZIJw_ZLRNBVBuTSiW00M3hILQ6Q.jpeg" alt="JJCR Logo">
+      <h2>JJCR Chocolates</h2>
+      <p>Fine chocolate made with care</p>
+    </div>
+    <div class="right">
+      <table>
+        <tr><td><strong>Date of Manufacture</strong></td><td>01/07/2025</td></tr>
+        <tr><td><strong>Date of Expiry</strong></td><td>01/07/2027</td></tr>
+        <tr><td><strong>Net Weight / Total Weight</strong></td><td>100 g / 120 g</td></tr>
+        <tr><td><strong>Standard</strong></td><td>ISO 22000:2018</td></tr>
+        <tr><td><strong>Producer (Institution / Country)</strong></td><td>JJCR Chocolates — Sri Lanka</td></tr>
+        <tr><td><strong>Environment / Consumer Friendly</strong></td><td>Eco-friendly, 100% recyclable wrapper</td></tr>
+      </table>
+
+      <div class="bottom">
+        <div class="sls">
+          <div class="sls-box">SLS</div>
+          <small>SLS Certification</small>
+        </div>
+        <div class="barcode">
+          <img src="https://barcode.tec-it.com/barcode.ashx?data=0123456789012&code=EAN13&translate-esc=true" alt="Barcode">
+          <div style="font-size:12px;text-align:center;">0123456789012</div>
+        </div>
+        <div style="text-align:right;font-size:12px;">
+          <div><strong>Packed by</strong></div>
+          <div>JJCR Chocolates S.A.</div>
+          <div>Zurich, Switzerland</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    This mock label is for demonstration only. Update the values and assets to match your final files.
+  </footer>
+</body>
+</html>
